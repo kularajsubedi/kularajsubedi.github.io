@@ -1,159 +1,288 @@
-'use strict';
+/* =========================================================
+   KULARAJ SUBEDI — WEBSITE INTERACTIONS
+   ========================================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const header = document.querySelector(".site-header");
+    const menuToggle = document.querySelector("#menuToggle");
+    const mainNav = document.querySelector("#mainNav");
+    const navLinks = document.querySelectorAll(".nav-link");
+    const backToTop = document.querySelector("#backToTop");
+    const year = document.querySelector("#year");
 
 
+    /* =========================================
+       CURRENT YEAR
+    ========================================= */
 
-// element toggle function
-const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
-
-
-
-// sidebar variables
-const sidebar = document.querySelector("[data-sidebar]");
-const sidebarBtn = document.querySelector("[data-sidebar-btn]");
-
-// sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
-
-
-
-// testimonials variables
-const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
-const modalContainer = document.querySelector("[data-modal-container]");
-const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-const overlay = document.querySelector("[data-overlay]");
-
-// modal variable
-const modalImg = document.querySelector("[data-modal-img]");
-const modalTitle = document.querySelector("[data-modal-title]");
-const modalText = document.querySelector("[data-modal-text]");
-
-// modal toggle function
-const testimonialsModalFunc = function () {
-  modalContainer.classList.toggle("active");
-  overlay.classList.toggle("active");
-}
-
-// add click event to all modal items
-for (let i = 0; i < testimonialsItem.length; i++) {
-
-  testimonialsItem[i].addEventListener("click", function () {
-
-    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
-
-    testimonialsModalFunc();
-
-  });
-
-}
-
-// add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
-
-
-
-// custom select variables
-const select = document.querySelector("[data-select]");
-const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
-
-select.addEventListener("click", function () { elementToggleFunc(this); });
-
-// add event in all select items
-for (let i = 0; i < selectItems.length; i++) {
-  selectItems[i].addEventListener("click", function () {
-
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    elementToggleFunc(select);
-    filterFunc(selectedValue);
-
-  });
-}
-
-// filter variables
-const filterItems = document.querySelectorAll("[data-filter-item]");
-
-const filterFunc = function (selectedValue) {
-
-  for (let i = 0; i < filterItems.length; i++) {
-
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
-    } else {
-      filterItems[i].classList.remove("active");
+    if (year) {
+        year.textContent = new Date().getFullYear();
     }
 
-  }
 
-}
+    /* =========================================
+       MOBILE MENU
+    ========================================= */
 
-// add event in all filter button items for large screen
-let lastClickedBtn = filterBtn[0];
+    if (menuToggle && mainNav) {
 
-for (let i = 0; i < filterBtn.length; i++) {
+        menuToggle.addEventListener("click", () => {
 
-  filterBtn[i].addEventListener("click", function () {
+            const isOpen =
+                mainNav.classList.toggle("open");
 
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    filterFunc(selectedValue);
+            document.body.classList.toggle(
+                "menu-open",
+                isOpen
+            );
 
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
-    lastClickedBtn = this;
+            menuToggle.innerHTML = isOpen
+                ? '<i class="fa-solid fa-xmark"></i>'
+                : '<i class="fa-solid fa-bars"></i>';
 
-  });
+        });
 
-}
-
-
-
-// contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
-
-// add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
-
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
     }
 
-  });
-}
+
+    /* =========================================
+       CLOSE MENU AFTER NAVIGATION
+    ========================================= */
+
+    navLinks.forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            if (mainNav) {
+                mainNav.classList.remove("open");
+            }
+
+            document.body.classList.remove("menu-open");
+
+            if (menuToggle) {
+                menuToggle.innerHTML =
+                    '<i class="fa-solid fa-bars"></i>';
+            }
+
+        });
+
+    });
 
 
+    /* =========================================
+       HEADER SCROLL EFFECT
+    ========================================= */
 
-// page navigation variables
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
+    function updateHeader() {
 
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
+        if (!header) return;
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
+        if (window.scrollY > 40) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+
     }
 
-  });
-}
+    window.addEventListener(
+        "scroll",
+        updateHeader,
+        { passive: true }
+    );
+
+    updateHeader();
+
+
+    /* =========================================
+       ACTIVE NAVIGATION
+    ========================================= */
+
+    const sections = document.querySelectorAll(
+        "main section[id]"
+    );
+
+    function updateActiveNav() {
+
+        let current = "";
+
+        sections.forEach(section => {
+
+            const sectionTop =
+                section.offsetTop - 150;
+
+            const sectionBottom =
+                sectionTop + section.offsetHeight;
+
+            if (
+                window.scrollY >= sectionTop &&
+                window.scrollY < sectionBottom
+            ) {
+                current = section.id;
+            }
+
+        });
+
+        navLinks.forEach(link => {
+
+            link.classList.remove("active");
+
+            const href =
+                link.getAttribute("href");
+
+            if (href === `#${current}`) {
+                link.classList.add("active");
+            }
+
+        });
+
+    }
+
+    window.addEventListener(
+        "scroll",
+        updateActiveNav,
+        { passive: true }
+    );
+
+    updateActiveNav();
+
+
+    /* =========================================
+       BACK TO TOP
+    ========================================= */
+
+    function updateBackToTop() {
+
+        if (!backToTop) return;
+
+        if (window.scrollY > 700) {
+            backToTop.classList.add("visible");
+        } else {
+            backToTop.classList.remove("visible");
+        }
+
+    }
+
+    window.addEventListener(
+        "scroll",
+        updateBackToTop,
+        { passive: true }
+    );
+
+    updateBackToTop();
+
+
+    if (backToTop) {
+
+        backToTop.addEventListener("click", () => {
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        });
+
+    }
+
+
+    /* =========================================
+       REVEAL ANIMATIONS
+    ========================================= */
+
+    const revealElements = document.querySelectorAll(
+        ".highlight-card, " +
+        ".expertise-card, " +
+        ".timeline-item, " +
+        ".project-card, " +
+        ".publication, " +
+        ".stat, " +
+        ".contact-detail"
+    );
+
+    revealElements.forEach(element => {
+        element.classList.add("reveal");
+    });
+
+
+    const observer =
+        new IntersectionObserver(
+            entries => {
+
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add(
+                            "visible"
+                        );
+
+                        observer.unobserve(
+                            entry.target
+                        );
+
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.12
+            }
+        );
+
+
+    revealElements.forEach(element => {
+        observer.observe(element);
+    });
+
+
+    /* =========================================
+       SMOOTH ANCHOR NAVIGATION
+    ========================================= */
+
+    document
+        .querySelectorAll('a[href^="#"]')
+        .forEach(anchor => {
+
+            anchor.addEventListener("click", event => {
+
+                const targetId =
+                    anchor.getAttribute("href");
+
+                if (
+                    !targetId ||
+                    targetId === "#"
+                ) {
+                    return;
+                }
+
+                const target =
+                    document.querySelector(targetId);
+
+                if (!target) return;
+
+                event.preventDefault();
+
+                const headerHeight =
+                    header
+                        ? header.offsetHeight
+                        : 0;
+
+                const targetPosition =
+                    target.getBoundingClientRect().top +
+                    window.scrollY -
+                    headerHeight +
+                    5;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: "smooth"
+                });
+
+            });
+
+        });
+
+});
