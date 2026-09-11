@@ -1,258 +1,3270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kularaj Subedi — Freelancher (Nepal)</title>
-  <meta name="description" content="Portfolio of Kularaj Subedi,Freelancher ," />
-  <meta property="og:title" content="Kularaj Subedi — Freelancher,Registered Advocate-Nepal Bar Council (Nepal)" />
-  <meta property="og:description" content="Sociologist • Social Research • Social Counselling • " />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="./Kularaj Subedi.jpg" />
-  <meta property="og:url" content="https://example.com/" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    <meta charset="UTF-8">
 
-  <style>
-    /* --------- local overrides --------- */
-    .title { color: #3a7d44; }
-    .kpi-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}
-    .kpi {background:#1f2937; color:#ffffff; padding:12px;border-radius:12px;text-align:center;border:1px solid rgba(255,255,255,.15)}
-    .kpi .num {font-weight:600;font-size:1.1rem;line-height:1.2;color:#ffffff}
-    .kpi .lbl {opacity:.9;font-size:.85rem;color:#ffffff}
-    .badge {display:inline-block;background:#e6f4ea;color:#2e7d32;padding:.25rem .5rem;border-radius:999px;font-size:.8rem;margin-right:.25rem}
-    .service .service-item-title{white-space:normal}
-    .skills-list .h5{min-width:180px}
-    .navbar .navbar-link[aria-current="page"]{color:#3a7d44}
-    .contact .form-btn[disabled]{opacity:.6}
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    /* Avatar */
-    .avatar {
-      width: 148px; height: 148px;
-      border-radius: 50%;
-      overflow: hidden;
-      border: 3px solid #3a7d44;
-      box-shadow: 0 4px 14px rgba(0,0,0,.18);
-      margin: 0 0 12px;
-      background:#fff;
-    }
-    .avatar img { width:100%; height:100%; object-fit:cover; display:block; }
+    <title>Kularaj Subedi | Sociologist • Legal Professional • Researcher</title>
 
-    /* Readable on dark sections (Projects) */
-    .on-dark { color:#fff; }
-    .on-dark h1,.on-dark h2,.on-dark h3,.on-dark h4,
-    .on-dark p,.on-dark li,.on-dark small,.on-dark span,
-    .on-dark .project-title,.on-dark .project-category,.on-dark .project-description { color:#fff; }
-    .on-dark a { color:#9dd6ff; }
-    .on-dark .project-description { text-shadow:0 1px 2px rgba(0,0,0,.6); }
-    .highlight-pill { display:inline-block; background:rgba(255,255,255,.08); padding:.4rem .6rem; border-radius:.5rem; backdrop-filter:blur(2px); }
+    <meta name="description"
+          content="Kularaj Subedi is a sociologist, legal professional, researcher, writer and freelancer from Nepal. Explore his work, publications, projects and professional journey.">
 
-    /* ==== Mobile overlap hard-fix ==== */
-    @media (max-width: 768px){
-      /* Let the sidebar (with photo) flow in document order */
-      .sidebar{
-        position: static !important;
-        transform: none !important;
-        margin: 0 0 16px 0 !important;
-        z-index: auto !important;
-      }
-      /* Space for content beneath the sidebar */
-      .main-content{
-        margin: 0 !important;
-        padding-top: 8px !important;
-      }
-      .main-content > article:first-of-type{
-        margin-top: 32px !important; /* bump to 24–32px if still tight */
-      }
-      /* Bottom navbar: stick without covering content */
-      .navbar{
-        position: sticky !important;
-        bottom: 0;
-        top: auto !important;
-        z-index: 1000;
-        background: #1e1e1e;
-        border-top: 1px solid rgba(255,255,255,.08);
-        backdrop-filter: blur(8px);
-      }
-      /* Reserve space for the navbar (JS sets --nav-h precisely) */
-      :root{ --nav-h: 64px; } /* fallback */
-      main{
-        padding-bottom: calc(var(--nav-h) + env(safe-area-inset-bottom)) !important;
-      }
-    }
-  </style>
+    <meta name="author" content="Kularaj Subedi">
+
+    <meta name="keywords"
+          content="Kularaj Subedi, Nepal, sociologist, researcher, advocate, social research, Nepal researcher, freelancer">
+
+    <meta name="theme-color" content="#0b1512">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title"
+          content="Kularaj Subedi | Researcher • Writer • Legal Professional">
+    <meta property="og:description"
+          content="Explore the professional work, research, publications and projects of Kularaj Subedi.">
+    <meta property="og:url"
+          content="https://www.kularajsubedi.com.np/">
+    <meta property="og:image"
+          content="https://www.kularajsubedi.com.np/Kularaj%20Subedi.jpg">
+
+    <meta name="twitter:card"
+          content="summary_large_image">
+
+    <meta name="twitter:title"
+          content="Kularaj Subedi">
+
+    <meta name="twitter:description"
+          content="Researcher, writer, legal professional and freelancer from Nepal.">
+
+    <meta name="twitter:image"
+          content="https://www.kularajsubedi.com.np/Kularaj%20Subedi.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-  <main>
-    <!-- Sidebar -->
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar-info">
-        <div class="avatar" aria-hidden="true">
-          <!-- update src if your file path is different -->
-          <img src="./Kularaj Subedi.jpg" alt="Portrait of Kularaj Subedi" loading="lazy" width="148" height="148" />
-        </div>
 
-        <div class="info-content">
-          <h1 class="name" title="Kularaj Subedi">Kularaj Subedi</h1>
-          <p class="title">Freelancher</p>
-          <div class="kpi-grid" aria-label="Key achievements">
-            <div class="kpi"><div class="num">Chief Editor</div><div class="lbl">Voices of Adarsh</div></div>
-            <div class="kpi"><div class="num">70+</div><div class="lbl">Article Published</div></div>
-            <div class="kpi"><div class="num">500+</div><div class="lbl">Government Employees,Enterpreneur and Teachers Trained</div></div>
-            <div class="kpi"><div class="num">7+</div><div class="lbl">districts served</div></div>
-          </div>
-        </div>
-        <button class="info_more-btn" data-sidebar-btn><span>Show Contacts</span></button>
-      </div>
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
-        <ul class="contacts-list">
-          <li class="contact-item"><div class="contact-info"><p class="contact-title">Email</p><a href="mailto:kularajsubedi@gmail.com" class="contact-link">kularajsubedi@gmail.com</a></div></li>
-          <li class="contact-item"><div class="contact-info"><p class="contact-title">Birthday</p><time datetime="1985-03-28"><March28,1985</time></div></li>
-          <li class="contact-item"><div class="contact-info"><p class="contact-title">Location</p><address>Syangja, Nepal</address></div></li>
-        </ul>
-        <div class="separator"></div>
-        <ul class="social-list">
-          <li class="social-item"><a href="https://www.researchgate.net/profile/Bishnu-Gautam-3" target="_blank" rel="noopener" class="social-link">ResearchGate</a></li>
-        </ul>
-      </div>
-    </aside>
+<!-- =========================================
+     NAVIGATION
+========================================= -->
 
-    <div class="main-content">
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item"><button class="navbar-link active" data-nav-link data-target="about" aria-current="page">About</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link data-target="experience">Experience</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link data-target="projects">Projects</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link data-target="publications">Publications</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link data-target="contact">Contact</button></li>
-        </ul>
-      </nav>
+<header class="site-header">
 
-      <article class="about active" data-page="about">
-        <header><h2 class="h2 article-title">About Me</h2></header>
-        <section class="about-text">
-          <p>Born in 1986 .</p>
-          
-      <article class="resume" data-page="experience">
-        <header><h2 class="h2 article-title">Experience & Education</h2></header>
+    <div class="nav-container">
 
-        <section class="timeline">
-          <div class="title-wrapper"><h3 class="h3">Work</h3></div>
-          <ol class="timeline-list">
-            <li class="timeline-item"><h4 class="h4 timeline-item-title">Freelancher 
-            
-          </ol>
-        </section>
+        <a href="#home" class="brand">
+            <span class="brand-mark">KS</span>
 
-        <section class="timeline">
-          <div class="title-wrapper"><h3 class="h3">Education</h3></div>
-          <ol class="timeline-list"> 
-            <li class="timeline-item"><h4 class="h4 timeline-item-title">L.L.B. — Tribhuvan University</h4><span> 2020 </span><p class="timeline-text">Various legal practice methods and Various branches of law.</p></li>          
-            <li class="timeline-item"><h4 class="h4 timeline-item-title">Masters in Arts — Tribhuvan University</h4><span> 2010-12 </span><p class="timeline-text">Specialized in  Sociology and Anthropology.</p></li>
-            <li class="timeline-item"><h4 class="h4 timeline-item-title">M.Ed. English — Tribhuvan University</h4><span> 2005-2007 </span><p class="timeline-text">Specialized in  English Education.</p></li>
-            <li class="timeline-item"><h4 class="h4 timeline-item-title">B.Ed. in English  — Tribhuvan University</h4><span>2002 — 2005</span><p class="timeline-text">Foundation degree in English Education.</p></li>
-          </ol>
-        </section>
-      </article>
+            <span class="brand-text">
+                Kularaj Subedi
+                <small>Professional Portfolio</small>
+            </span>
+        </a>
 
-      <article class="portfolio on-dark" data-page="projects">
-        <header><h2 class="h2 article-title">Projects</h2></header>
-        <section class="projects">
-          <ul class="project-list">
-            <li class="project-item active">
-              <h3 class="project-title"> Administration in Nepal</h3>
-              <p class="project-category">Administrative Project</p>
-              <p class="project-description highlight-pill">
-                Implementation status of administrative sytem in Nepal.
-              </p>
-            </li>
-            <li class="project-item active">
-              <h3 class="project-title">Social Studies</h3>
-              <p class="project-category">Field level study</p>
-              <p class="project-description highlight-pill">
-               Study about the comprehensive structure of society.
-              </p>
-            </li>
-          </ul>
-        </section>
-      </article>
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation">
 
-      <article class="blog" data-page="publications">
-        <header><h2 class="h2 article-title">Publications</h2></header>
-        <section class="blog-posts">
-          <ul class="blog-posts-list">
-            <li class="blog-post-item"><a href="https://https:www.ratopati.com/story/352844/blog-?fbclid=IwY2xjawPQs25leHRuA2FlbQIxMQBicmlkETEwUjIwNk1lOUtFNW9ndm5Pc3J0YwZhcHBfaWQBMAABHjRcRT9gjd_3XsRsUAQj8fMuYvIYGVtWEAmSqAZmEKDMX8KSKfiEkQzQ8Ms8_aem_FOCUZbp7YOFPeyJY0QzTkQ" target="_blank" rel="noopener"><div class="blog-content"><div class="blog-meta"><p class="blog-category">Published</p><span class="dot"></span><time datetime="2079">2079</time></div><h3 class="h3 blog-item-title">राष्ट्रपतिको संवैधानिक भूमिका र जनताको अपेक्षा</h3><p class="blog-text">Current scenario of Nepal.</p></div></a></li>
-            <li class="blog-post-item"><a href="https://www.onlinekhabar.com/2023/03/1271919" target="_blank" rel="noopener"><div class="blog-content"><div class="blog-meta"><p class="blog-category">Article</p><span class="dot"></span><time datetime="2023-03-12">March 2023</time></div><h3 class="h3 blog-item-title">सञ्चारमाध्यमका समस्या</h3><p class="blog-text"> Media and Socety of Nepal.</p></div></a></li>
-            <li class="blog-post-item"><a href="https://dhorpatannews.com/2024/06/115219/?fbclid=IwY2xjawPQtnVleHRuA2FlbQIxMQABHTwwo27psokPqKkdWuBin07qXQLE1xXt4h9IXH3KXMAm_SqoUT4ydhIlOQ_aem_AbawV_diskLpRcGDLqeBSS81Wnq6kTyr-8C5JEU6biHqBBzKa80T_gTvGtoIByPVJuRUIKSpGNTmnVLvNDW0XRBn" target="_blank" rel="noopener"><div class="blog-content"><div class="blog-meta"><p class="blog-category">नेपाल किन पछाडी पर्यो ?</p><span class="dot"></span><time datetime="2024">2024</time></div><h3 class="h3 blog-item-title">Development issues in Nepal</h3><p class="blog-text">Various issues related to rural economy.</p></div></a></li>
-            <li class="blog-post-item"><a href="https://www.youtube.com/watch?v=_nhtzf3oje8" target="_blank" rel="noopener"><div class="blog-content"><div class="blog-meta"><p class="blog-category">निजामति सेवा जनउत्तरदायी छैनp><span class="dot"></span><time datetime="2024">2024</time></div><h3 class="h3 blog-item-title">Civil Service in Nepal</h3><p class="blog-text">Civil Servant status and experiences in Nepal.</p></div></a></li>
-            <li class="blog-post-item"><a href="https://dhorpatannews.com/2026/07/168110/?fbclid=IwY2xjawUQ8ixwZG9mBWV4dG4DYWVtAjExAHNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR6GTNb20oSA1tG5NkW2AVa8tgI5KzBe1r7YWDZuKeyXqobFQEZA3Cf4P5uzSg_aem_fSMRvr9PZ6-7uxgeQJrR3g" target="_blank" rel="noopener"><div class="blog-content"><div class="blog-meta"><p class="blog-category">अन्नपूर्ण वेसक्याम्पको अविष्मरणिय यात्राp><span class="dot"></span><time datetime="2026">2026</time></div><h3 class="h3 blog-item-title">A great trip to Annapurna Base Camp</h3><p class="blog-text">A great trip to Annapurna Base Camp.</p></div></a></li>
-            <li class="blog-post-item"><a href="https://www.onlinekhabar.com/2026/03/1898020/where-has-the-old-team-gone?fbclid=IwY2xjawUQ8_ZwZG9mBWV4dG4DYWVtAjExAHNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR5sbcEBWdgdNj9ajJh9ADeGLlFPd5CiJLydebjidlL9AnmigWbaKBKWG29VFQ_aem_JL6uMuf8u96vPOVSpHVMJg" target="_blank" rel="noopener"><div class="blog-content"><div class="blog-meta"><p class="blog-category">Article</p><span class="dot"></span><time datetime="2026">2026</time></div><h3 class="h3 blog-item-title">कहाँ चुके दलहरु</h3><p class="blog-text"> Where the parties made Mistake</p></div></a></li>
-          </ul>
-        </section>
-      </article>
+            <i class="fa-solid fa-bars"></i>
 
-      <article class="contact" data-page="contact">
-        <header><h2 class="h2 article-title">Contact</h2></header>
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe title="Map of Hattiban, Nepal" src="https://www.google.com/maps/search/kharibiot+hattiban/@27.648034,85.3358817,17z?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoASAFQAw%3D%3D" width="400" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </figure>
-        </section>
-        <section class="contact-form">
-          <h3 class="h3 form-title">Send a message</h3>
-          <form action="#" class="form" data-form>
-            <div class="input-wrapper"><input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input /><input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input /></div>
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-            <button class="form-btn" type="submit" disabled data-form-btn><span>Send Message</span></button>
-          </form>
-        </section>
-      </article>
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+
+            <a href="#home" class="nav-link active">
+                Home
+            </a>
+
+            <a href="#about" class="nav-link">
+                About
+            </a>
+
+            <a href="#expertise" class="nav-link">
+                Expertise
+            </a>
+
+            <a href="#experience" class="nav-link">
+                Journey
+            </a>
+
+            <a href="#projects" class="nav-link">
+                Projects
+            </a>
+
+            <a href="#publications" class="nav-link">
+                Publications
+            </a>
+
+            <a href="#contact" class="nav-link nav-cta">
+                Contact
+            </a>
+
+        </nav>
+
     </div>
-  </main>
 
-  <!-- Tabs script -->
-  <script>
-  (function(){
-    const buttons = Array.from(document.querySelectorAll('.navbar .navbar-link'));
-    const pages = Array.from(document.querySelectorAll('article[data-page]'));
-    function show(page){
-      pages.forEach(a => a.classList.toggle('active', a.dataset.page === page));
-      buttons.forEach(b => {
-        const on = (b.dataset.target || b.textContent.trim().toLowerCase()) === page;
-        b.classList.toggle('active', on);
-        if(on){ b.setAttribute('aria-current','page'); } else { b.removeAttribute('aria-current'); }
-      });
-    }
-    buttons.forEach(b => b.addEventListener('click', e => {
-      e.preventDefault();
-      const target = (b.dataset.target || b.textContent.trim().toLowerCase());
-      show(target);
-      try { history.replaceState(null, '', `#${target}`); } catch(_) {}
-    }));
-    const hash = (location.hash || '').replace('#','').toLowerCase();
-    if(hash && pages.some(a => a.dataset.page === hash)) { show(hash); } else { show('about'); }
-  })();
-  </script>
+</header>
 
-  <!-- Mobile navbar height → padding (prevents overlap) -->
-  <script>
-  (function(){
-    function setNavPadding(){
-      var nav = document.querySelector('.navbar');
-      if(!nav) return;
-      var h = nav.offsetHeight || 64;
-      document.documentElement.style.setProperty('--nav-h', h + 'px');
-    }
-    window.addEventListener('load', setNavPadding);
-    window.addEventListener('resize', setNavPadding);
-    setNavPadding();
-  })();
-  </script>
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="hero-bg"></div>
+
+    <div class="container hero-grid">
+
+        <div class="hero-copy">
+
+            <div class="eyebrow">
+                <span></span>
+                INDEPENDENT PROFESSIONAL • NEPAL
+            </div>
+
+            <h1>
+                Ideas that connect
+                <em>people, society</em>
+                and progress.
+            </h1>
+
+            <p class="hero-text">
+                I am <strong>Kularaj Subedi</strong> — a sociologist,
+                legal professional, researcher, writer and freelancer
+                interested in society, governance, education,
+                administration and contemporary Nepal.
+            </p>
+
+            <div class="hero-actions">
+
+                <a href="#about" class="btn btn-primary">
+                    Explore My Work
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+
+                <a href="#contact" class="btn btn-ghost">
+                    Let's Connect
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <div class="hero-meta">
+
+                <div>
+                    <strong>70+</strong>
+                    <span>Articles published</span>
+                </div>
+
+                <div>
+                    <strong>500+</strong>
+                    <span>People trained</span>
+                </div>
+
+                <div>
+                    <strong>7+</strong>
+                    <span>Districts served</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="portrait-wrap">
+
+                <div class="portrait-glow"></div>
+
+                <div class="portrait-card">
+
+                    <img
+                        src="Kularaj Subedi.jpg"
+                        alt="Portrait of Kularaj Subedi"
+                    >
+
+                    <div class="portrait-caption">
+
+                        <span>KS</span>
+
+                        <div>
+                            <strong>Kularaj Subedi</strong>
+                            <small>Nepal</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="floating-card card-one">
+
+                    <i class="fa-solid fa-pen-nib"></i>
+
+                    <div>
+                        <strong>Writer</strong>
+                        <span>70+ publications</span>
+                    </div>
+
+                </div>
+
+                <div class="floating-card card-two">
+
+                    <i class="fa-solid fa-scale-balanced"></i>
+
+                    <div>
+                        <strong>Legal Professional</strong>
+                        <span>LL.B.</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <a href="#about" class="scroll-indicator">
+        <span>Scroll to explore</span>
+        <i class="fa-solid fa-arrow-down"></i>
+    </a>
+
+</section>
+
+
+<!-- =========================================
+     ABOUT
+========================================= -->
+
+<section class="section about-section" id="about">
+
+    <div class="container">
+
+        <div class="section-label">
+            <span>01</span>
+            ABOUT
+        </div>
+
+        <div class="section-intro">
+
+            <h2>
+                A multidisciplinary
+                <span>professional journey.</span>
+            </h2>
+
+            <p>
+                My work sits at the intersection of society, law,
+                education, research and public discourse.
+            </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-story">
+
+                <p class="lead">
+                    I believe meaningful professional work begins
+                    with understanding people and the systems
+                    around them.
+                </p>
+
+                <p>
+                    My academic background spans sociology,
+                    anthropology, English education and law.
+                    This multidisciplinary foundation has allowed
+                    me to approach social and professional issues
+                    from different perspectives.
+                </p>
+
+                <p>
+                    I have worked across research, writing,
+                    training, education and professional consulting,
+                    with a particular interest in Nepal's society,
+                    administration, development and governance.
+                </p>
+
+                <a
+                    href="mailto:kularajsubedi@gmail.com"
+                    class="text-link">
+
+                    Start a conversation
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="about-highlights">
+
+                <div class="highlight-card">
+
+                    <span class="highlight-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Research
+                    </h3>
+
+                    <p>
+                        Social research, field studies and
+                        analysis of contemporary issues.
+                    </p>
+
+                </div>
+
+
+                <div class="highlight-card">
+
+                    <span class="highlight-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Writing
+                    </h3>
+
+                    <p>
+                        Articles, opinion pieces and
+                        public-interest writing.
+                    </p>
+
+                </div>
+
+
+                <div class="highlight-card">
+
+                    <span class="highlight-number">
+                        03
+                    </span>
+
+                    <h3>
+                        Training
+                    </h3>
+
+                    <p>
+                        Knowledge sharing and professional
+                        capacity development.
+                    </p>
+
+                </div>
+
+
+                <div class="highlight-card">
+
+                    <span class="highlight-number">
+                        04
+                    </span>
+
+                    <h3>
+                        Legal Perspective
+                    </h3>
+
+                    <p>
+                        Understanding law, governance and
+                        institutional systems.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     EXPERTISE
+========================================= -->
+
+<section class="section expertise-section" id="expertise">
+
+    <div class="container">
+
+        <div class="section-label light">
+            <span>02</span>
+            EXPERTISE
+        </div>
+
+        <div class="section-heading-light">
+
+            <h2>
+                Areas where
+                <em>I create value.</em>
+            </h2>
+
+        </div>
+
+
+        <div class="expertise-grid">
+
+            <article class="expertise-card">
+
+                <div class="expertise-icon">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                </div>
+
+                <span>01</span>
+
+                <h3>
+                    Social Research
+                </h3>
+
+                <p>
+                    Research and analysis focused on social
+                    structures, communities and contemporary
+                    issues in Nepal.
+                </p>
+
+                <a href="#contact">
+                    Discuss a project
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <article class="expertise-card">
+
+                <div class="expertise-icon">
+                    <i class="fa-solid fa-pen-nib"></i>
+                </div>
+
+                <span>02</span>
+
+                <h3>
+                    Writing & Publishing
+                </h3>
+
+                <p>
+                    Articles, opinion pieces and analytical
+                    writing on society, governance and
+                    development.
+                </p>
+
+                <a href="#publications">
+                    View publications
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <article class="expertise-card">
+
+                <div class="expertise-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+
+                <span>03</span>
+
+                <h3>
+                    Training & Facilitation
+                </h3>
+
+                <p>
+                    Training, facilitation and knowledge
+                    sharing for professionals, educators and
+                    organizations.
+                </p>
+
+                <a href="#contact">
+                    Work with me
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <article class="expertise-card">
+
+                <div class="expertise-icon">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+
+                <span>04</span>
+
+                <h3>
+                    Law & Governance
+                </h3>
+
+                <p>
+                    A multidisciplinary perspective on law,
+                    governance, public administration and
+                    institutions.
+                </p>
+
+                <a href="#experience">
+                    My background
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     EXPERIENCE / EDUCATION
+========================================= -->
+
+<section class="section journey-section" id="experience">
+
+    <div class="container">
+
+        <div class="section-label">
+            <span>03</span>
+            JOURNEY
+        </div>
+
+        <div class="section-intro">
+
+            <h2>
+                Education &
+                <span>professional foundation.</span>
+            </h2>
+
+            <p>
+                A multidisciplinary academic background
+                shaping my approach to research and practice.
+            </p>
+
+        </div>
+
+
+        <div class="journey-grid">
+
+            <div class="journey-column">
+
+                <h3 class="journey-title">
+                    <i class="fa-solid fa-briefcase"></i>
+                    Professional
+                </h3>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">
+                                Present
+                            </span>
+
+                            <h4>
+                                Freelancer & Independent Professional
+                            </h4>
+
+                            <p>
+                                Research, writing, training,
+                                social analysis and professional
+                                assignments.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">
+                                Professional Experience
+                            </span>
+
+                            <h4>
+                                Chief Editor — Voices of Adarsh
+                            </h4>
+
+                            <p>
+                                Editorial work and public-interest
+                                writing.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="journey-column">
+
+                <h3 class="journey-title">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Education
+                </h3>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">
+                                2020
+                            </span>
+
+                            <h4>
+                                L.L.B.
+                            </h4>
+
+                            <p>
+                                Tribhuvan University
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">
+                                2010–2012
+                            </span>
+
+                            <h4>
+                                Master's in Arts
+                            </h4>
+
+                            <p>
+                                Sociology & Anthropology —
+                                Tribhuvan University
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">
+                                2005–2007
+                            </span>
+
+                            <h4>
+                                M.Ed. English
+                            </h4>
+
+                            <p>
+                                Tribhuvan University
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">
+                                2002–2005
+                            </span>
+
+                            <h4>
+                                B.Ed. English
+                            </h4>
+
+                            <p>
+                                Tribhuvan University
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     PROJECTS
+========================================= -->
+
+<section class="section projects-section" id="projects">
+
+    <div class="container">
+
+        <div class="section-label">
+            <span>04</span>
+            PROJECTS
+        </div>
+
+        <div class="section-intro">
+
+            <h2>
+                Selected areas of
+                <span>work & inquiry.</span>
+            </h2>
+
+            <p>
+                Selected research and project interests.
+            </p>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+            <article class="project-card project-large">
+
+                <div class="project-number">
+                    01
+                </div>
+
+                <div class="project-icon">
+                    <i class="fa-solid fa-building-columns"></i>
+                </div>
+
+                <div class="project-content">
+
+                    <span>
+                        ADMINISTRATION
+                    </span>
+
+                    <h3>
+                        Administration in Nepal
+                    </h3>
+
+                    <p>
+                        Exploring the implementation and
+                        effectiveness of administrative systems
+                        in Nepal.
+                    </p>
+
+                </div>
+
+                <div class="project-arrow">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    02
+                </div>
+
+                <div class="project-icon">
+                    <i class="fa-solid fa-people-group"></i>
+                </div>
+
+                <div class="project-content">
+
+                    <span>
+                        SOCIAL RESEARCH
+                    </span>
+
+                    <h3>
+                        Social Studies
+                    </h3>
+
+                    <p>
+                        Understanding the comprehensive
+                        structure and dynamics of society.
+                    </p>
+
+                </div>
+
+                <div class="project-arrow">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+
+            </article>
+
+
+            <article class="project-card accent-project">
+
+                <div class="project-number">
+                    03
+                </div>
+
+                <div class="project-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <div class="project-content">
+
+                    <span>
+                        DEVELOPMENT
+                    </span>
+
+                    <h3>
+                        Development & Rural Economy
+                    </h3>
+
+                    <p>
+                        Examining social and economic issues
+                        affecting communities and rural Nepal.
+                    </p>
+
+                </div>
+
+                <div class="project-arrow">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     PUBLICATIONS
+========================================= -->
+
+<section class="section publications-section" id="publications">
+
+    <div class="container">
+
+        <div class="section-label">
+            <span>05</span>
+            PUBLICATIONS
+        </div>
+
+        <div class="section-intro publications-heading">
+
+            <div>
+
+                <h2>
+                    Writing &
+                    <span>public discourse.</span>
+                </h2>
+
+            </div>
+
+            <p>
+                Selected articles, commentary and
+                published work.
+            </p>
+
+        </div>
+
+
+        <div class="publication-list">
+
+            <a
+                href="https://www.onlinekhabar.com/2023/03/1271919"
+                target="_blank"
+                rel="noopener"
+                class="publication">
+
+                <div class="publication-year">
+                    2023
+                </div>
+
+                <div class="publication-body">
+
+                    <span>
+                        ONLINEKHABAR
+                    </span>
+
+                    <h3>
+                        सञ्चारमाध्यमका समस्या
+                    </h3>
+
+                    <p>
+                        Media and society in Nepal.
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+
+            <a
+                href="https://dhorpatannews.com/2024/06/115219/"
+                target="_blank"
+                rel="noopener"
+                class="publication">
+
+                <div class="publication-year">
+                    2024
+                </div>
+
+                <div class="publication-body">
+
+                    <span>
+                        DHORPATAN NEWS
+                    </span>
+
+                    <h3>
+                        Development issues in Nepal
+                    </h3>
+
+                    <p>
+                        Various issues related to the rural
+                        economy and development.
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+
+            <a
+                href="https://www.youtube.com/watch?v=_nhtzf3oje8"
+                target="_blank"
+                rel="noopener"
+                class="publication">
+
+                <div class="publication-year">
+                    2024
+                </div>
+
+                <div class="publication-body">
+
+                    <span>
+                        VIDEO / COMMENTARY
+                    </span>
+
+                    <h3>
+                        Civil Service in Nepal
+                    </h3>
+
+                    <p>
+                        Reflections on civil service,
+                        accountability and experience.
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+
+            <a
+                href="https://dhorpatannews.com/2026/07/168110/"
+                target="_blank"
+                rel="noopener"
+                class="publication">
+
+                <div class="publication-year">
+                    2026
+                </div>
+
+                <div class="publication-body">
+
+                    <span>
+                        TRAVEL / REFLECTION
+                    </span>
+
+                    <h3>
+                        A great trip to Annapurna Base Camp
+                    </h3>
+
+                    <p>
+                        A personal reflection on the Annapurna
+                        Base Camp journey.
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+
+            <a
+                href="https://www.onlinekhabar.com/2026/03/1898020/where-has-the-old-team-gone"
+                target="_blank"
+                rel="noopener"
+                class="publication">
+
+                <div class="publication-year">
+                    2026
+                </div>
+
+                <div class="publication-body">
+
+                    <span>
+                        ONLINEKHABAR
+                    </span>
+
+                    <h3>
+                        कहाँ चुके दलहरु
+                    </h3>
+
+                    <p>
+                        Reflections on political parties
+                        and their mistakes.
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+        <div class="publication-footer">
+
+            <span>
+                More articles and publications can be
+                added here over time.
+            </span>
+
+            <a
+                href="https://www.researchgate.net/profile/Bishnu-Gautam-3"
+                target="_blank"
+                rel="noopener">
+
+                ResearchGate
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     STATS
+========================================= -->
+
+<section class="stats-section">
+
+    <div class="container stats-grid">
+
+        <div class="stat">
+
+            <strong>70<span>+</span></strong>
+
+            <p>
+                Articles & publications
+            </p>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong>500<span>+</span></strong>
+
+            <p>
+                Professionals & educators trained
+            </p>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong>7<span>+</span></strong>
+
+            <p>
+                Districts served
+            </p>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong>4</strong>
+
+            <p>
+                Academic qualifications
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     CONTACT
+========================================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="container">
+
+        <div class="contact-box">
+
+            <div class="contact-copy">
+
+                <div class="section-label light">
+                    <span>06</span>
+                    CONTACT
+                </div>
+
+                <h2>
+                    Have an idea,
+                    <em>question</em>
+                    or project?
+                </h2>
+
+                <p>
+                    I am open to conversations around research,
+                    writing, training, social studies, professional
+                    collaboration and other meaningful projects.
+                </p>
+
+                <a
+                    href="mailto:kularajsubedi@gmail.com"
+                    class="email-link">
+
+                    <span>
+                        kularajsubedi@gmail.com
+                    </span>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="contact-details">
+
+                <div class="contact-detail">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+                        <span>Location</span>
+                        <strong>Nepal</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-detail">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <div>
+                        <span>Email</span>
+                        <strong>
+                            kularajsubedi@gmail.com
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-detail">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    <div>
+                        <span>Website</span>
+                        <strong>
+                            www.kularajsubedi.com.np
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="https://www.researchgate.net/profile/Bishnu-Gautam-3"
+                    target="_blank"
+                    rel="noopener"
+                    class="social-button">
+
+                    <i class="fa-brands fa-researchgate"></i>
+
+                    ResearchGate
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <a href="#home" class="footer-brand">
+                Kularaj Subedi
+            </a>
+
+            <p>
+                Researcher · Writer · Legal Professional ·
+                Freelancer
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#publications">Publications</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            © <span id="year"></span>
+            Kularaj Subedi.
+            All rights reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Back to top -->
+
+<button
+    id="backToTop"
+    class="back-to-top"
+    aria-label="Back to top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
+2. New style.css
+This is where most of the visual transformation happens.
+
+/* =========================================================
+   KULARAJ SUBEDI — PREMIUM PORTFOLIO
+   ========================================================= */
+
+:root {
+
+    --green-950: #07100d;
+    --green-900: #0b1512;
+    --green-800: #10211b;
+    --green-700: #17362a;
+    --green: #2f7d57;
+    --green-light: #62a67f;
+
+    --cream: #f5f3ed;
+    --cream-dark: #e9e7df;
+
+    --white: #ffffff;
+    --black: #111512;
+
+    --text: #27312c;
+    --muted: #69736e;
+    --border: #dfe3de;
+
+    --serif: "Playfair Display", Georgia, serif;
+    --sans: "DM Sans", Arial, sans-serif;
+
+    --shadow:
+        0 25px 80px rgba(7, 16, 13, .10);
+
+    --shadow-small:
+        0 12px 35px rgba(7, 16, 13, .08);
+
+    --radius: 22px;
+
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--sans);
+    color: var(--text);
+    background: var(--cream);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+::selection {
+    background: var(--green);
+    color: white;
+}
+
+
+/* =========================================================
+   UTILITIES
+   ========================================================= */
+
+.container {
+    width: min(1180px, calc(100% - 48px));
+    margin-inline: auto;
+}
+
+.section {
+    padding: 125px 0;
+}
+
+.section-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: var(--green);
+
+    font-size: .72rem;
+    font-weight: 700;
+
+    letter-spacing: .18em;
+    text-transform: uppercase;
+
+    margin-bottom: 25px;
+}
+
+.section-label span {
+    display: grid;
+    place-items: center;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid currentColor;
+    border-radius: 50%;
+
+    font-size: .65rem;
+}
+
+.section-label.light {
+    color: #8fc3a5;
+}
+
+.section-intro {
+    display: grid;
+    grid-template-columns: 1.3fr .7fr;
+    gap: 60px;
+
+    align-items: end;
+
+    margin-bottom: 65px;
+}
+
+.section-intro h2,
+.section-heading-light h2 {
+    max-width: 800px;
+
+    color: var(--green-900);
+
+    font-family: var(--serif);
+
+    font-size: clamp(2.7rem, 5vw, 5rem);
+    line-height: 1.05;
+
+    letter-spacing: -.045em;
+}
+
+.section-intro h2 span {
+    color: var(--green);
+}
+
+.section-intro p {
+    color: var(--muted);
+    font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background: rgba(245,243,237,.78);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border-bottom: 1px solid rgba(23,54,42,.08);
+
+    transition: .3s ease;
+}
+
+.site-header.scrolled {
+    background: rgba(245,243,237,.96);
+    box-shadow: 0 8px 30px rgba(7,16,13,.06);
+}
+
+.nav-container {
+    width: min(1280px, calc(100% - 48px));
+    min-height: 82px;
+
+    margin-inline: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: var(--green-900);
+}
+
+.brand-mark {
+    display: grid;
+    place-items: center;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: var(--green-900);
+    color: white;
+
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.brand-text small {
+    color: var(--muted);
+
+    font-size: .58rem;
+    font-weight: 500;
+
+    letter-spacing: .12em;
+    text-transform: uppercase;
+
+    margin-top: 4px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.nav-link {
+    position: relative;
+
+    padding: 10px 14px;
+
+    color: #52605a;
+
+    font-size: .8rem;
+    font-weight: 600;
+
+    transition: .25s ease;
+}
+
+.nav-link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 14px;
+    right: 14px;
+    bottom: 3px;
+
+    height: 2px;
+
+    background: var(--green);
+
+    transform: scaleX(0);
+    transform-origin: center;
+
+    transition: .25s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--green-900);
+}
+
+.nav-link.active::after {
+    transform: scaleX(1);
+}
+
+.nav-cta {
+    margin-left: 8px;
+
+    padding: 11px 19px;
+
+    border-radius: 100px;
+
+    background: var(--green-900);
+    color: white;
+}
+
+.nav-cta::after {
+    display: none;
+}
+
+.nav-cta:hover {
+    background: var(--green);
+    color: white;
+}
+
+.menu-toggle {
+    display: none;
+
+    width: 45px;
+    height: 45px;
+
+    border: 0;
+    border-radius: 50%;
+
+    background: var(--green-900);
+    color: white;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+    position: relative;
+
+    min-height: 100vh;
+
+    padding: 170px 0 100px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 75% 30%,
+            rgba(47,125,87,.13),
+            transparent 30%
+        ),
+        var(--cream);
+}
+
+.hero-bg::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    right: -180px;
+    bottom: -180px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(47,125,87,.18);
+}
+
+.hero-bg::after {
+    content: "";
+
+    position: absolute;
+
+    width: 800px;
+    height: 800px;
+
+    left: -600px;
+    top: 10%;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(47,125,87,.1);
+}
+
+.hero-grid {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.08fr)
+        minmax(380px, .92fr);
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: var(--green);
+
+    font-size: .68rem;
+    font-weight: 700;
+
+    letter-spacing: .18em;
+
+    margin-bottom: 24px;
+}
+
+.eyebrow span {
+    width: 36px;
+    height: 1px;
+
+    background: var(--green);
+}
+
+.hero h1 {
+    max-width: 780px;
+
+    color: var(--green-950);
+
+    font-family: var(--serif);
+
+    font-size: clamp(3.6rem, 7vw, 7rem);
+
+    font-weight: 600;
+
+    line-height: .96;
+
+    letter-spacing: -.055em;
+}
+
+.hero h1 em {
+    display: block;
+
+    color: var(--green);
+
+    font-style: normal;
+}
+
+.hero-text {
+    max-width: 650px;
+
+    margin: 30px 0 34px;
+
+    color: var(--muted);
+
+    font-size: 1.08rem;
+}
+
+.hero-text strong {
+    color: var(--green-900);
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 15px 22px;
+
+    border-radius: 100px;
+
+    font-size: .82rem;
+    font-weight: 700;
+
+    transition:
+        transform .25s ease,
+        background .25s ease,
+        color .25s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-primary {
+    background: var(--green-900);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--green);
+}
+
+.btn-ghost {
+    border: 1px solid var(--border);
+    color: var(--green-900);
+}
+
+.btn-ghost:hover {
+    border-color: var(--green);
+    color: var(--green);
+}
+
+.hero-meta {
+    display: flex;
+    gap: 38px;
+
+    margin-top: 55px;
+}
+
+.hero-meta div {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-meta strong {
+    color: var(--green-900);
+
+    font-family: var(--serif);
+    font-size: 1.7rem;
+
+    line-height: 1;
+}
+
+.hero-meta span {
+    margin-top: 5px;
+
+    color: var(--muted);
+
+    font-size: .68rem;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.hero-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.portrait-wrap {
+    position: relative;
+
+    width: min(440px, 100%);
+
+    padding: 28px;
+}
+
+.portrait-wrap::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border: 1px solid rgba(47,125,87,.25);
+
+    border-radius: 48% 52% 50% 50% / 42% 45% 55% 58%;
+
+    transform: rotate(8deg);
+}
+
+.portrait-glow {
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    right: 0;
+    top: 40px;
+
+    border-radius: 50%;
+
+    background: rgba(47,125,87,.15);
+
+    filter: blur(40px);
+}
+
+.portrait-card {
+    position: relative;
+    z-index: 2;
+
+    overflow: hidden;
+
+    border-radius: 45% 45% 24px 24px;
+
+    background: var(--green-900);
+
+    box-shadow: var(--shadow);
+}
+
+.portrait-card img {
+    width: 100%;
+    aspect-ratio: .82;
+
+    object-fit: cover;
+
+    object-position: center top;
+
+    filter: saturate(.9);
+}
+
+.portrait-caption {
+    position: absolute;
+
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 13px 15px;
+
+    border-radius: 14px;
+
+    color: white;
+
+    background: rgba(7,16,13,.76);
+
+    backdrop-filter: blur(15px);
+}
+
+.portrait-caption > span {
+    display: grid;
+    place-items: center;
+
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+
+    background: var(--green);
+
+    font-size: .65rem;
+    font-weight: 700;
+}
+
+.portrait-caption div {
+    display: flex;
+    flex-direction: column;
+}
+
+.portrait-caption strong {
+    font-size: .78rem;
+}
+
+.portrait-caption small {
+    color: #b8c8c0;
+    font-size: .65rem;
+}
+
+.floating-card {
+    position: absolute;
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 15px;
+
+    border: 1px solid rgba(255,255,255,.5);
+    border-radius: 14px;
+
+    background: rgba(255,255,255,.82);
+
+    backdrop-filter: blur(15px);
+
+    box-shadow: var(--shadow-small);
+}
+
+.floating-card i {
+    color: var(--green);
+}
+
+.floating-card div {
+    display: flex;
+    flex-direction: column;
+}
+
+.floating-card strong {
+    color: var(--green-900);
+    font-size: .72rem;
+}
+
+.floating-card span {
+    color: var(--muted);
+    font-size: .6rem;
+}
+
+.card-one {
+    top: 13%;
+    left: -25px;
+}
+
+.card-two {
+    right: -25px;
+    bottom: 18%;
+}
+
+.scroll-indicator {
+    position: absolute;
+
+    bottom: 35px;
+    left: 50%;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    transform: translateX(-50%);
+
+    color: var(--muted);
+
+    font-size: .62rem;
+    font-weight: 600;
+
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.scroll-indicator i {
+    color: var(--green);
+}
+
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
+
+.about-section {
+    background: white;
+}
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 90px;
+
+    align-items: start;
+}
+
+.about-story .lead {
+    color: var(--green-900);
+
+    font-family: var(--serif);
+
+    font-size: 1.7rem;
+
+    line-height: 1.45;
+}
+
+.about-story p {
+    margin-bottom: 22px;
+
+    color: var(--muted);
+}
+
+.text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 10px;
+
+    color: var(--green);
+
+    font-size: .82rem;
+    font-weight: 700;
+}
+
+.text-link:hover i {
+    transform: translateX(5px);
+}
+
+.text-link i {
+    transition: .25s ease;
+}
+
+.about-highlights {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 1px;
+
+    background: var(--border);
+
+    border: 1px solid var(--border);
+}
+
+.highlight-card {
+    min-height: 200px;
+
+    padding: 28px;
+
+    background: white;
+
+    transition: .3s ease;
+}
+
+.highlight-card:hover {
+    background: var(--cream);
+}
+
+.highlight-number {
+    color: var(--green-light);
+
+    font-size: .65rem;
+    font-weight: 700;
+}
+
+.highlight-card h3 {
+    margin: 25px 0 10px;
+
+    color: var(--green-900);
+
+    font-family: var(--serif);
+    font-size: 1.35rem;
+}
+
+.highlight-card p {
+    color: var(--muted);
+    font-size: .84rem;
+}
+
+
+/* =========================================================
+   EXPERTISE
+   ========================================================= */
+
+.expertise-section {
+    background: var(--green-900);
+    color: white;
+}
+
+.section-heading-light {
+    margin-bottom: 60px;
+}
+
+.section-heading-light h2 {
+    color: white;
+}
+
+.section-heading-light em {
+    color: #82bd9b;
+    font-style: normal;
+}
+
+.expertise-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 1px;
+
+    background: rgba(255,255,255,.12);
+}
+
+.expertise-card {
+    position: relative;
+
+    min-height: 380px;
+
+    padding: 32px;
+
+    background: var(--green-900);
+
+    transition: .35s ease;
+}
+
+.expertise-card:hover {
+    background: var(--green-800);
+    transform: translateY(-8px);
+}
+
+.expertise-card > span {
+    color: #759989;
+
+    font-size: .65rem;
+    font-weight: 700;
+}
+
+.expertise-icon {
+    display: grid;
+    place-items: center;
+
+    width: 54px;
+    height: 54px;
+
+    margin-bottom: 45px;
+
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 15px;
+
+    color: #8fc3a5;
+
+    font-size: 1.2rem;
+}
+
+.expertise-card h3 {
+    margin: 15px 0;
+
+    color: white;
+
+    font-family: var(--serif);
+    font-size: 1.55rem;
+}
+
+.expertise-card p {
+    color: #a8b9b0;
+
+    font-size: .84rem;
+}
+
+.expertise-card a {
+    position: absolute;
+
+    left: 32px;
+    bottom: 28px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #8fc3a5;
+
+    font-size: .7rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.expertise-card a i {
+    transition: .25s;
+}
+
+.expertise-card:hover a i {
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   JOURNEY
+   ========================================================= */
+
+.journey-section {
+    background: var(--cream);
+}
+
+.journey-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+}
+
+.journey-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 35px;
+
+    color: var(--green-900);
+
+    font-size: 1.1rem;
+}
+
+.journey-title i {
+    color: var(--green);
+}
+
+.timeline {
+    position: relative;
+
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    top: 5px;
+    bottom: 0;
+    left: 5px;
+
+    width: 1px;
+
+    background: var(--border);
+}
+
+.timeline-item {
+    position: relative;
+
+    padding: 0 0 42px 28px;
+}
+
+.timeline-dot {
+    position: absolute;
+
+    top: 4px;
+    left: -30px;
+
+    width: 11px;
+    height: 11px;
+
+    border: 3px solid var(--cream);
+
+    border-radius: 50%;
+
+    background: var(--green);
+}
+
+.timeline-date {
+    color: var(--green);
+
+    font-size: .67rem;
+    font-weight: 700;
+
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.timeline-content h4 {
+    margin: 8px 0;
+
+    color: var(--green-900);
+
+    font-family: var(--serif);
+    font-size: 1.35rem;
+}
+
+.timeline-content p {
+    color: var(--muted);
+
+    font-size: .84rem;
+}
+
+
+/* =========================================================
+   PROJECTS
+   ========================================================= */
+
+.projects-section {
+    background: white;
+}
+
+.projects-grid {
+    display: grid;
+
+    grid-template-columns: 1.15fr .85fr;
+
+    gap: 18px;
+}
+
+.project-card {
+    position: relative;
+
+    min-height: 350px;
+
+    padding: 35px;
+
+    overflow: hidden;
+
+    border-radius: var(--radius);
+
+    background: var(--cream);
+
+    border: 1px solid var(--border);
+
+    transition: .35s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-small);
+}
+
+.project-large {
+    grid-row: span 2;
+
+    min-height: 718px;
+
+    background: var(--green-900);
+    color: white;
+}
+
+.project-number {
+    position: absolute;
+
+    top: 28px;
+    right: 30px;
+
+    color: #8fa399;
+
+    font-size: .7rem;
+    font-weight: 700;
+}
+
+.project-large .project-number {
+    color: #7d998c;
+}
+
+.project-icon {
+    display: grid;
+    place-items: center;
+
+    width: 60px;
+    height: 60px;
+
+    margin-bottom: 100px;
+
+    border-radius: 17px;
+
+    background: rgba(47,125,87,.1);
+    color: var(--green);
+
+    font-size: 1.25rem;
+}
+
+.project-large .project-icon {
+    background: rgba(255,255,255,.1);
+    color: #8fc3a5;
+}
+
+.project-content {
+    max-width: 550px;
+}
+
+.project-content > span {
+    color: var(--green);
+
+    font-size: .63rem;
+    font-weight: 700;
+
+    letter-spacing: .14em;
+}
+
+.project-large .project-content > span {
+    color: #8fc3a5;
+}
+
+.project-content h3 {
+    margin: 12px 0;
+
+    color: var(--green-900);
+
+    font-family: var(--serif);
+    font-size: clamp(1.8rem, 3vw, 2.7rem);
+
+    line-height: 1.1;
+}
+
+.project-large .project-content h3 {
+    color: white;
+}
+
+.project-content p {
+    max-width: 500px;
+
+    color: var(--muted);
+
+    font-size: .88rem;
+}
+
+.project-large .project-content p {
+    color: #a8b9b0;
+}
+
+.project-arrow {
+    position: absolute;
+
+    right: 30px;
+    bottom: 28px;
+
+    width: 42px;
+    height: 42px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid var(--border);
+    border-radius: 50%;
+
+    color: var(--green);
+
+    transition: .25s ease;
+}
+
+.project-large .project-arrow {
+    border-color: rgba(255,255,255,.2);
+    color: #8fc3a5;
+}
+
+.project-card:hover .project-arrow {
+    transform: rotate(45deg);
+}
+
+.accent-project {
+    background: #dceadf;
+}
+
+
+/* =========================================================
+   PUBLICATIONS
+   ========================================================= */
+
+.publications-section {
+    background: var(--cream);
+}
+
+.publications-heading {
+    margin-bottom: 50px;
+}
+
+.publication-list {
+    border-top: 1px solid var(--border);
+}
+
+.publication {
+    display: grid;
+
+    grid-template-columns: 100px 1fr 40px;
+
+    align-items: center;
+
+    gap: 35px;
+
+    padding: 30px 5px;
+
+    border-bottom: 1px solid var(--border);
+
+    transition: .3s ease;
+}
+
+.publication:hover {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    background: white;
+}
+
+.publication-year {
+    color: var(--green);
+
+    font-family: var(--serif);
+    font-size: 1.2rem;
+}
+
+.publication-body > span {
+    color: var(--muted);
+
+    font-size: .6rem;
+    font-weight: 700;
+
+    letter-spacing: .13em;
+}
+
+.publication-body h3 {
+    margin: 7px 0 4px;
+
+    color: var(--green-900);
+
+    font-family: var(--serif);
+    font-size: 1.35rem;
+}
+
+.publication-body p {
+    color: var(--muted);
+    font-size: .8rem;
+}
+
+.publication > i {
+    color: var(--green);
+
+    transition: .25s ease;
+}
+
+.publication:hover > i {
+    transform: translate(4px,-4px);
+}
+
+.publication-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 30px;
+
+    margin-top: 30px;
+
+    color: var(--muted);
+
+    font-size: .78rem;
+}
+
+.publication-footer a {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: var(--green);
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   STATS
+   ========================================================= */
+
+.stats-section {
+    padding: 80px 0;
+
+    background: var(--green-800);
+
+    color: white;
+}
+
+.stats-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 1px;
+
+    background: rgba(255,255,255,.1);
+}
+
+.stat {
+    padding: 20px 30px;
+
+    background: var(--green-800);
+}
+
+.stat strong {
+    color: white;
+
+    font-family: var(--serif);
+    font-size: clamp(2.6rem, 5vw, 4.5rem);
+
+    line-height: 1;
+}
+
+.stat strong span {
+    color: #83bd9c;
+}
+
+.stat p {
+    max-width: 160px;
+
+    margin-top: 10px;
+
+    color: #9fb3a8;
+
+    font-size: .68rem;
+
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.contact-section {
+    padding: 120px 0;
+
+    background: white;
+}
+
+.contact-box {
+    display: grid;
+
+    grid-template-columns: 1.15fr .85fr;
+
+    gap: 70px;
+
+    padding: 70px;
+
+    border-radius: 30px;
+
+    background: var(--green-900);
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.contact-box::after {
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    right: -220px;
+    bottom: -280px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,.12);
+}
+
+.contact-copy {
+    position: relative;
+    z-index: 2;
+}
+
+.contact-copy h2 {
+    max-width: 700px;
+
+    color: white;
+
+    font-family: var(--serif);
+
+    font-size: clamp(2.8rem, 5vw, 5rem);
+
+    line-height: 1.02;
+
+    letter-spacing: -.04em;
+}
+
+.contact-copy h2 em {
+    color: #83bd9c;
+    font-style: normal;
+}
+
+.contact-copy p {
+    max-width: 620px;
+
+    margin: 25px 0 30px;
+
+    color: #aabdb3;
+}
+
+.email-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 13px;
+
+    color: white;
+
+    font-size: .95rem;
+    font-weight: 600;
+}
+
+.email-link i {
+    color: #83bd9c;
+}
+
+.contact-details {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 24px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-detail > i {
+    display: grid;
+    place-items: center;
+
+    width: 43px;
+    height: 43px;
+
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 50%;
+
+    color: #83bd9c;
+}
+
+.contact-detail div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-detail span {
+    color: #758d81;
+
+    font-size: .62rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.contact-detail strong {
+    color: white;
+
+    font-size: .78rem;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: max-content;
+
+    margin-top: 10px;
+
+    padding: 11px 15px;
+
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 100px;
+
+    color: white;
+
+    font-size: .7rem;
+    font-weight: 700;
+
+    transition: .25s;
+}
+
+.social-button > i:first-child {
+    color: #83bd9c;
+}
+
+.social-button > i:last-child {
+    color: #7e978a;
+}
+
+.social-button:hover {
+    background: rgba(255,255,255,.07);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer {
+    padding: 45px 0;
+
+    background: #050b08;
+
+    color: #82958b;
+}
+
+.footer-grid {
+    display: grid;
+
+    grid-template-columns: 1fr auto 1fr;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.footer-brand {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: white;
+
+    font-family: var(--serif);
+    font-size: 1.2rem;
+}
+
+.footer-grid p {
+    font-size: .7rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 22px;
+
+    font-size: .7rem;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-copy {
+    text-align: right;
+
+    font-size: .65rem;
+}
+
+
+/* =========================================================
+   BACK TO TOP
+   ========================================================= */
+
+.back-to-top {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    z-index: 900;
+
+    width: 45px;
+    height: 45px;
+
+    display: grid;
+    place-items: center;
+
+    border: 0;
+    border-radius: 50%;
+
+    background: var(--green-900);
+    color: white;
+
+    box-shadow: var(--shadow-small);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(15px);
+
+    transition: .3s ease;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   REVEAL ANIMATION
+   ========================================================= */
+
+.reveal {
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .hero-grid {
+        grid-template-columns: 1fr .8fr;
+        gap: 40px;
+    }
+
+    .expertise-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .contact-box {
+        padding: 50px;
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .nav-container {
+        min-height: 70px;
+    }
+
+    .menu-toggle {
+        display: grid;
+        place-items: center;
+    }
+
+    .main-nav {
+        position: fixed;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 25px;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        background: rgba(245,243,237,.98);
+
+        border-bottom: 1px solid var(--border);
+
+        transform: translateY(-130%);
+        opacity: 0;
+
+        transition: .3s ease;
+    }
+
+    .main-nav.open {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .nav-link {
+        padding: 14px;
+    }
+
+    .nav-cta {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .hero {
+        padding-top: 125px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-copy {
+        text-align: center;
+    }
+
+    .eyebrow {
+        justify-content: center;
+    }
+
+    .hero-text {
+        margin-inline: auto;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-meta {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        max-width: 500px;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+    .section-intro,
+    .about-grid,
+    .journey-grid,
+    .contact-box {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-large {
+        grid-row: auto;
+        min-height: 450px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    .footer-copy {
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .container,
+    .nav-container {
+        width: min(100% - 32px, 1180px);
+    }
+
+    .section {
+        padding: 85px 0;
+    }
+
+    .hero {
+        padding-bottom: 100px;
+    }
+
+    .hero h1 {
+        font-size: clamp(3rem, 16vw, 5rem);
+    }
+
+    .hero-meta {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .hero-meta strong {
+        font-size: 1.4rem;
+    }
+
+    .portrait-wrap {
+        padding: 18px;
+    }
+
+    .card-one {
+        left: -5px;
+    }
+
+    .card-two {
+        right: -5px;
+    }
+
+    .floating-card {
+        padding: 9px 11px;
+    }
+
+    .floating-card span {
+        display: none;
+    }
+
+    .about-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .expertise-card {
+        min-height: 330px;
+    }
+
+    .publication {
+        grid-template-columns: 55px 1fr 25px;
+        gap: 15px;
+        padding: 23px 0;
+    }
+
+    .publication-body h3 {
+        font-size: 1.05rem;
+    }
+
+    .publication-body p {
+        display: none;
+    }
+
+    .publication-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stat {
+        padding: 25px 15px;
+    }
+
+    .contact-box {
+        padding: 35px 25px;
+    }
+
+    .contact-copy h2 {
+        font-size: 2.8rem;
+    }
+
+    .back-to-top {
+        right: 15px;
+        bottom: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+
+}
